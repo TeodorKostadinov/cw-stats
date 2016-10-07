@@ -1,0 +1,62 @@
+<div class="container-get-students" >
+	<header>
+  		<h2 class="header-h2">Students</h2>
+	</header>
+	<div class="content">
+    	<div class="center">
+    		<button class="btn" (click)="goToCR()" type="button" href="#">Statistic</button>
+    	</div>
+    	<table id="table" border="1">
+    		<thead>
+    			<th>Student Id</th>
+    			<th>First Name</th>
+    			<th>Last Name</th>
+    			<th>Age</th>
+    			<th>Occupation</th>
+    			<th>Previous Experience</th>
+    			<th>Mail</th>
+    			<th>Course</th>
+    			<th>Phone</th>
+    			<th>Implementation</th>
+    			<th>Contribution</th>
+    			<th>Status</th>
+    			<th>Has Laptop</th>
+    			<th>Experience Text</th>
+    			<th>Subscription</th>
+    			<th>Id Confirmation</th>
+    			<th>Date Confirmed</th>
+    			<th>Expectations</th>
+    			<th>Participated CW</th>
+    			<th>Date Registered</th>
+    			<th>Date Approved</th>
+			</thead>
+    		<tr *ngFor="let student of students">
+                <td>{{student.studentId}}</td>
+                <td>{{student.firstName}}</td>
+                <td>{{student.lastName}}</td>
+                <td>{{student.age}}</td>
+                <td>{{student.occupation}}</td>
+                <td>{{student.previousExperience}}</td>
+                <td>{{student.mail}}</td>
+                <td>{{student.course}}</td>
+                <td>{{student.phone}}</td>
+                <td>{{student.implementation}}</td>
+                <td>{{student.contribution}}</td>
+                <td>{{student.status}}</td>
+                <td>{{student.hasLaptop}}</td>
+                <td>{{student.experienceTxt}}</td>
+                <td>{{student.subscription}}</td>
+                <td>{{student.idConfirmation}}</td>
+                <td>{{student.dateConfirmed}}</td>
+                <td>{{student.expectations}}</td>
+                <td>{{student.participatedCW}}</td>
+                <td>{{student.dateRegistered}}</td>
+                <td>{{student.dateApproved | date: 'dd/MM/yyyy HH:mm'}}</td>
+
+			</tr>
+    	</table>
+    	
+    	
+
+	</div>
+</div>
